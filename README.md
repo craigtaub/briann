@@ -1,7 +1,9 @@
 BRIANN
 ======
 Run with ./run.sh
-
+BBC Real-time Information Artificial Neural Network. 
+A creation of Hackathon week May 2013. 
+Creates an ANN for user Recommendations panel for iPlayer.
 
 Ruby Setup
 ==========
