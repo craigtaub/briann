@@ -13,3 +13,8 @@ Mongo DB -> Column Families
 
 ann -> user_raw
     -> user_data
+
+
+PHP
+=====
+Simple procedural pages which write to Mongo->ANN->user_raw and fetch from Mongo->ANN->user_data.
