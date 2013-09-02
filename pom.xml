@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>craig.static</groupId>
+    <artifactId>craig-${pom.version}</artifactId> <!-- name of the application-->
+    <name>${pom.artifactId}</name> <!-- naming of our package, we just copy the artifactId-->
+    <description>Craig Hudson v1</description> <!-- description of the static assets available in the rpm -->
+    <packaging>pom</packaging>
+    <version>0.37.0</version> <!-- version of the static assets -->
+    <parent>
+        <groupId>craig.maven.parents</groupId>
+        <artifactId>static</artifactId>
+        <version>1.37</version>
+    </parent>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>JavaScript, PHP and CSS build</id>
+                        <phase>process-sources</phase>
+                        <configuration>
+                            <tasks>
+                                <exec executable="pwd" failonerror="false"></exec>
+                                <exec executable="php" failonerror="true">
+                                    <arg value="scripts/run-tests.sh"/>
+                                </exec>
+                                <property environment="MyEnv"/>
+                                <echo message="Current environment is ${MyEnv.TARGET_ENV}"/>
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                    
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>
+</project>
