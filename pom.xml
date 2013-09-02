@@ -6,14 +6,14 @@
   <name>Maven Default Project</name>
   <version>3.6.9.Final</version>
   <groupId>3.6.9.Final</groupId>
-  <artifactId>craig</artifactId>
+  <artifactId>craig1</artifactId>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
+                <groupId>one</groupId>
                 <version>1.6</version>
-                <artifactId>craig</artifactId>
+                <artifactId>craig2</artifactId>
                 <executions>
                     <execution>
                         <id>JavaScript, PHP and CSS build</id>
@@ -41,6 +41,7 @@
     </reporting>
     
     <properties>
+        <urlName>/tviplayer</urlName>
     </properties>
 
 </project>
