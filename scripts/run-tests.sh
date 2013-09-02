@@ -1,8 +1,8 @@
 #JSHINT
-eval jshint tests/two.js;
+#eval jshint tests/two.js;
 
 #PHP CODE SNIFFER
-eval phpcs tests/one.php;
+#eval phpcs tests/one.php;
 
 #COMPILE SASS
 FILE=tests/sass/stylesheets/one.css
