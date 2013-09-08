@@ -3,7 +3,7 @@
 echo 'start'
 
 #JSHINT
-eval jshint tests/two.js;
+eval /home/ubuntu/bin/jshint tests/two.js;
 
 #PHP CODE SNIFFER
 eval phpcs tests/one.php;
