@@ -1,4 +1,5 @@
 
+
 class Fann
 	def setProfile()
 		#train PROFILE data
