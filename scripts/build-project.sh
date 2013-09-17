@@ -41,5 +41,5 @@ finish() {
 
 update_github 1 "Build in progress..."
 
-update_github 0 "Everything looks good..tra"
+update_github 0 "Everything looks good..tea"
 finish 0
