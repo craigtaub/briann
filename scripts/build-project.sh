@@ -26,7 +26,7 @@ update_github() {
     fi
 
 BUILD_URL="http://craigtaub.dyndns.org:8181/job/project-build/"
-#need add build num
+#need add build num, this shows on github
    POST="{\"state\":\"${STATUS}\",\"target_url\":\"$BUILD_URL\",\"description\":\"$2\"}"
     curl --basic -u craigtaub:Chloeytb01 --silent --insecure --data "$POST" https://api.github.com/repos/$OWNER/$REPO/statuses/$SHA?access_token=$USERNAME
 #Post status for commit
