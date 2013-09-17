@@ -10,8 +10,8 @@ PATH=$WORKSPACE/git-ci/bin:$PATH
 OWNER=craigtaub
 REPO=briann
 BRANCH=master
-USERNAME=craigtaub
-PASSWORD=Chloeytb01
+USERNAME=craigtaubdev
+PASSWORD=craigtaub01
 
 update_github() {
     set -e
